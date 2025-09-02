@@ -29,3 +29,150 @@ header {
     width: 100px;
     margin-left: -10%;
 }
+
+button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    margin-left: 25px;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul a {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.menu ul a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    height: 2px;
+    background-color: #f7a800;
+    transition: 0.1s ease-out;
+}
+
+.menu ul a:hover::after {
+    width: 100%;
+}
+
+.header-end {
+    display: flex;
+    align-items: center;
+}
+
+.header-end i {
+    margin-right: 20px;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    background-color: #bb2337;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2s ease-out;
+}
+
+button span {
+    font-family: "Anton", sans-serif;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+.fa-crown {
+    position: relative;
+    padding: 20px;
+}
+
+.login {
+    position: absolute;
+    right: -22px;
+    top: 60px;
+    width: 270px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.login button {
+    width: 100%;
+    background-color: #f7a800;
+}
+
+hr {
+    border: 0;
+    margin: 30px 0;
+    background-color: #999;
+    width: 100%;
+    height: 1px;
+}
+
+.login p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.login button:last-child {
+    background-color: transparent;
+    border: 1px solid #f7a800;
+    color: #f7a800;
+}
+
+.login::after {
+    position: absolute;
+    right: 15px;
+    top: -20px;                     /* Encore plus proche */
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;      /* Encore plus grande */
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #fff;
+    filter: drop-shadow(0 -2px 3px rgba(0, 0, 0, 0.1));
+    z-index: -3;
+}
+
+.fa-crown:hover .login {
+    display: block;
+}
+
+/* Home*/
+.home {
+    margin-top: 80px;
+    background: url(./images/img1.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
