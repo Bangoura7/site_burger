@@ -218,3 +218,138 @@ h3 {
 .food-list .box:hover {
     transform: scale(1.05);
 }
+/* Fidelity Program */
+.fidelity-prog {
+    margin: 35px auto;
+    height: 350px;
+    width: 100%;
+    background: url(./images/img8.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fidelity-prog div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fidelity-prog div button {
+    margin-top: 25px;
+    background-color: #f7a800;
+}
+
+.fidelity-prog .div1 {
+   width: 300px;
+}
+
+.fidelity-prog .div2 {
+   width: 350px;
+   margin-top: 25px;
+}
+
+.fidelity-prog .div3 {
+   width: 410px;
+}
+
+.fidelity-prog img {
+    width: 100%;
+}
+
+/* Little Food */
+.little-food {
+    padding: 0 10%;
+}
+.little-food img {
+    width: 220px;
+}
+
+.little-food_box {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+}
+
+.little-food .box {
+    background-color: #fbf5ee;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    height: 100%;
+    transition: 0.25s;
+}
+
+.little-food .box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 25px 10%;
+}
+
+.footer p {
+    font-size: 15px;
+}
+.icones_socials {
+    margin: 25px 0;
+}
+
+.icones_socials i {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+footer img {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer img:last-child {
+    margin-left: 10px;
+}
+
+footer .div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .div2 ul a{
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: 0.5s;   
+}
+
+footer .div2 ul a:hover {
+    color: #f7a800;
+    letter-spacing: 0.5px;
+}
+
+footer .div3 {
+    text-align: center;
+}
+footer .div3 p:first-child {
+    font-size: 13px;
+}
+
+footer .div3 p:last-child {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
